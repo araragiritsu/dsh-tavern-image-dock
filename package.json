@@ -1,0 +1,19 @@
+{
+  "name": "dsh-tavern-image-dock",
+  "version": "0.6.0",
+  "description": "右侧栏常驻的插图面板：当前这一局的图一直挂在侧边栏里，可手动再画一轮，也能存成 PNG。",
+  "type": "module",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": ["dsh-tavern-plugin"]
+    }
+  },
+  "license": "MIT"
+}
